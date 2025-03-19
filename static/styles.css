@@ -1,0 +1,117 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #450283, #f63bce);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal dividido en dos secciones */
+.main-container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Formulario - Sección Izquierda */
+.form-container {
+    flex: 1;
+    padding: 40px;
+    background: #ffffff;
+    color: #450283;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #450283;
+    font-size: 16px;
+    background: #e0f2fe;
+    color: #450283;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #eb2567;
+    background: #f3e8ff;
+    outline: none;
+}
+
+/* Botón */
+#button {
+    padding: 14px;
+    background: #eb2567;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+#button:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
+
+/* Sección de Información - Derecha */
+.info-container {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-container p {
+    font-size: 14px;
+    max-width: 80%;
+}
+
