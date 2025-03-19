@@ -1,0 +1,62 @@
+/* Estilos para la página de resultado */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #450283, #f63bce);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tarjeta de resultado */
+.result-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Resultado mostrado */
+p {
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Botón de volver */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #eb2567;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+}
