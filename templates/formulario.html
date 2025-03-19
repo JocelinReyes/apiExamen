@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">  
+    <title>Seleccionar Algoritmo</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Elige un Algoritmo</h2>
+            <p>Introduce los valores y selecciona el método de búsqueda:</p>
+            <form action="/resultado" method="post">
+                <div class="input-group">
+                    <label for="estado_inicial">Estado Inicial</label>
+                    <input type="text" id="estado_inicial" name="estado_inicial" placeholder="Ej: 4,2,3,1" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="solucion">Solución Deseada</label>
+                    <input type="text" id="solucion" name="solucion" placeholder="Ej: 1,2,3,4" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="algoritmo">Método de Búsqueda</label>
+                    <select id="algoritmo" name="algoritmo">
+                        <option value="BFS">Búsqueda en Amplitud (BFS)</option>
+                        <option value="BFS_REC">Búsqueda en Amplitud Recursiva</option>
+                        <option value="DFS">Busqueda DFS</option>
+                    </select>
+                </div>
+
+                <button id="button" type="submit">Ejecutar</button>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <h3>¿Cómo funciona?</h3>
+            <p>Elige un algoritmo para encontrar la solución de una lista de números en un orden específico.</p>
+        </div>
+    </div>
+</body>
+</html>
+
